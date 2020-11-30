@@ -1,3 +1,4 @@
+{% extends 'base.html' %}
 {% import 'macros.html' as macro%}
 <!DOCTYPE html>
 <html>
@@ -10,6 +11,8 @@
         {% endif %}
     </head>
     <body>
+            <!-- Content block -->
+            {% block content %}
             <!-- Trending news -->
         <h3> Trending News</h3>
         <ul>
@@ -25,5 +28,6 @@
         <ul>
             {{ macro.displayNewsList(now_showing)}}
         </ul>
+            {% endblock%}
     </body>
 </html>
