@@ -1,1 +1,29 @@
-<h1> {{ message }} </h1>
+{% import 'macros.html' as macro%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        {% if title %}
+        <title> {{ title }}</title>
+        {% else %}
+        <title> Welcome to the best News Article website </title>
+        {% endif %}
+    </head>
+    <body>
+            <!-- Trending news -->
+        <h3> Trending News</h3>
+        <ul>
+            {{ macro.displayNewsList(trending)}}
+        </ul>
+        <!-- Upcoming news -->
+        <h3> Upcoming News </h3>
+        <ul>
+            {{ macro.displayNewsList(upcoming)}}
+        </ul>
+        <!-- Now showing news -->
+        <h3>Now Showing</h3>
+        <ul>
+            {{ macro.displayNewsList(now_showing)}}
+        </ul>
+    </body>
+</html>
