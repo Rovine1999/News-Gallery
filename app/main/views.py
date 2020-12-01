@@ -2,7 +2,7 @@ from flask import render_template
 from . import main
 from ..request import get_news,get_news1
 
-@app.route('/')
+@main.route('/')
 def index():
 
     '''
@@ -16,7 +16,7 @@ def index():
     return render_template('index.html', title = title,trending = trending_news)
 
 
-@app.route('/news/<int:news_id>')
+@main.route('/news/<int:news_id>')
 def news(news_id):
 
     '''
