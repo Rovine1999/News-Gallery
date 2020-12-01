@@ -4,6 +4,8 @@
 Application that enable the user to create many accounts with different passwords and save them, each account having different passwords.
 ## Setup/Installation Requirements
 To install this application, go to terminal and clone using the link:https://github.com/Rovine1999/News-Gallery.git to run on your machine.
+
+To log onto the application copy and paste the link on the browser: https://rovine-news-gallery.herokuapp.com/
 ## Known Bugs
 So far, on this application no errors discovered, but if there's an error you would discover on installation, feel free to reach out.
 ## Technologies Used
