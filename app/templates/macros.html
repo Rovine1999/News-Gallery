@@ -6,10 +6,32 @@
             <div class="col-ms-6">
                 <div class="card">
                     <div class="card-body">
-                        <img src="{{ news.image }}" class="card-img-top" alt="" class="img-responsive">
+                        <img src="{{ news.urlToImage }}" class="card-img-top" alt="" class="img-responsive">
                         <div class="card-title">{{news.name}} </div>
                         <div class="card-text">{{news.description}} </div>
                         <a href="{{news.url}}" class="btn btn-success">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endfor %}
+
+{% endmacro %}
+
+{% macro displayArticlesList(articles_list) %}
+
+{% for articles in articles_list %}
+    <div class="container">
+        <div class="row">
+            <div class="col-ms-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="{{ articles.urlToImage }}" class="card-img-top" alt="" class="img-responsive">
+                        <div class="card-title">{{articles.name}} </div>
+                        <div class="card-text">{{articles.description}} </div>
+                        <a href="{{articles.url}}" class="btn btn-success">Read more</a>
                     </div>
                 </div>
             </div>

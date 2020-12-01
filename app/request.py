@@ -49,7 +49,7 @@ def process_results(news_list):
         category= news_item.get('category')
         language = news_item.get('language')
         country =news_item.get('country')
-        image = news_item.get('image')
+    
         if category:
             news_object = News(id, name, description, url, category, language, country,image)
             news_results.append(news_object)
@@ -72,8 +72,12 @@ def get_news1(id):
             category = news_details_response.get('category')
             language = news_details_response.get('language')
             country = news_details_response.get('country')
-            image = news_details_response.get('image')
+            
 
-            news_object = News(id,name,description,url,category,language,country,image)
+            news_object = News(id,name,description,url,category,language,country)
 
     return news_object
+
+
+
+    
