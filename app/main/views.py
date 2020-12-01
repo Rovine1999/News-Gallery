@@ -1,6 +1,6 @@
 from flask import render_template
-from app import app
-from .request import get_news,get_news1
+from . import main
+from ..request import get_news,get_news1
 
 @app.route('/')
 def index():
