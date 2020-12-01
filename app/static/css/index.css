@@ -1,0 +1,13 @@
+body{
+    background-color: bisque;
+}
+
+h3{
+    text-align: center;
+}
+.trend{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
