@@ -7,7 +7,7 @@ To install this application, go to terminal and clone using the link:https://git
 ## Known Bugs
 So far, on this application no errors discovered, but if there's an error you would discover on installation, feel free to reach out.
 ## Technologies Used
-Technology used in the development of this application is python i.e flask.
+Technology used in the development of this application is HTML in templates and  python i.e flask for functionallity
 ## Support and contact details
 You can find me:
 1. twiter: @rovinewanjala.
